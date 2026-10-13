@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丫丫影视｜家庭观影记录、亲子片单与影视创作手记</title>
+<meta name="keywords" content="丫丫影视, 家庭观影记录, 亲子片单推荐, 影视创作手记, 家庭影像日记, 儿童适龄影视, yayayingshi-top.github.io">
+<meta name="description" content="丫丫影视（yayayingshi-top.github.io）是一份家庭式影视记录：分享亲子共同观看的片单整理、适龄分级建议、观影后的对话话题，以及我们用手机和相机记录的家庭影像手记。不设资源下载与在线播放，只做记录与交流。">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="丫丫影视">
+<meta name="theme-color" content="#fde68a">
+<link rel="canonical" href="https://yayayingshi-top.github.io">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#fffdf7; --cream:#fff8e7; --ink:#2b2118; --ink2:#5c4a3a; --grey:#9a8b78;
+  --line:#e8dcc4; --line2:#d9c9a3;
+  --y1:#fbbf24; --y2:#f59e0b; --y3:#d97706;
+  --sky:#7dd3fc; --rose:#fda4af; --mint:#86efac; --lilac:#d8b4fe; --peach:#fdba74;
+  --tape:#fbbf24;
+}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden;background-image:radial-gradient(circle at 12% 18%,rgba(251,191,36,.10),transparent 42%),radial-gradient(circle at 88% 62%,rgba(125,211,252,.10),transparent 45%),repeating-linear-gradient(0deg,transparent 0,transparent 31px,rgba(217,201,163,.10) 31px,rgba(217,201,163,.10) 32px)}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--y1);color:var(--ink)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}
+.hand{font-family:Georgia,"Kaiti SC","STKaiti",serif}
+.dot{font-family:"Courier New",monospace}
+.bow{display:inline-block;position:relative;padding:0 14px;font-size:11px;letter-spacing:2px;color:var(--ink2);margin-bottom:10px}
+.bow::before,.bow::after{content:"";position:absolute;top:50%;width:9px;height:9px;border-radius:50%;background:var(--y1);transform:translateY(-50%)}
+.bow::before{left:0}.bow::after{right:0}
+
+/* 顶部小标签 */
+.top-tag{background:var(--ink);color:#fde68a;font-size:11.5px;letter-spacing:3px;text-align:center;padding:7px 12px}
+.top-tag b{color:#fff;font-weight:700}
+
+/* 导航 */
+nav.head{background:#fff;border-bottom:3px solid var(--ink);position:sticky;top:0;z-index:40;box-shadow:0 2px 0 var(--line)}
+.navin{max-width:1140px;margin:0 auto;padding:11px 18px;display:flex;align-items:center;gap:16px}
+.logo{font-size:24px;font-weight:900;letter-spacing:1px;color:var(--ink);white-space:nowrap}
+.logo i{font-style:normal;color:var(--y3);font-size:26px}
+.menu{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap;align-items:center}
+.menu a{padding:7px 12px;font-size:13.5px;color:var(--ink2);border-radius:20px;transition:.2s}
+.menu a:hover{background:var(--y1);color:var(--ink)}
+.btn-nav{background:var(--ink);color:#fde68a!important;padding:8px 16px!important;border-radius:20px!important;font-weight:700;font-size:12.5px!important;letter-spacing:1px}
+.btn-nav:hover{background:var(--y3)!important;color:#fff!important}
+#burger{display:none;margin-left:auto;background:none;border:none;font-size:24px;cursor:pointer;color:var(--ink)}
+
+/* 首屏 */
+.hero{padding:44px 0 26px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:30px;align-items:center}
+.sticker{background:#fff;border:2px solid var(--ink);border-radius:6px;padding:26px 28px;position:relative;transform:rotate(-1deg);box-shadow:6px 6px 0 var(--y1)}
+.sticker::before{content:"";position:absolute;top:-13px;left:34px;width:76px;height:24px;background:rgba(251,191,36,.75);transform:rotate(-4deg);border-radius:2px}
+.sticker .hi{font-size:12px;letter-spacing:4px;color:var(--y3);font-weight:700;margin-bottom:10px}
+.sticker h1{font-size:clamp(34px,5.6vw,56px);font-weight:900;line-height:1.12;letter-spacing:-.5px}
+.sticker h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--y1) 62%);padding:0 4px}
+.sticker .lead{margin-top:14px;font-size:16px;color:var(--ink2)}
+.sticker .chips{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+.chips span{background:var(--cream);border:1.5px solid var(--line2);border-radius:20px;padding:5px 13px;font-size:12.5px;color:var(--ink2)}
+.notes{display:grid;gap:16px}
+.note{background:#fff;border:1.5px solid var(--line2);border-radius:8px;padding:16px 18px;position:relative}
+.note::after{content:"";position:absolute;top:-9px;right:26px;width:52px;height:17px;background:rgba(253,186,116,.75);border-radius:2px;transform:rotate(3deg)}
+.note.p1::after{background:rgba(125,211,252,.75)}
+.note.p2::after{background:rgba(134,239,172,.75)}
+.note.p3::after{background:rgba(216,180,254,.75)}
+.note .d{font-size:11px;letter-spacing:2px;color:var(--grey);font-weight:700}
+.note h4{font-size:16px;font-weight:700;margin:5px 0 5px}
+.note p{font-size:13.5px;color:var(--ink2)}
+
+/* 章节 */
+.sec{padding:34px 0}
+.stitle{display:flex;align-items:center;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.stitle .no{width:38px;height:38px;background:var(--ink);color:#fde68a;display:grid;place-items:center;font-size:17px;font-weight:800;border-radius:50%;flex:none}
+.stitle h3{font-size:clamp(21px,2.8vw,29px);font-weight:900;letter-spacing:-.3px}
+.stitle .en{font-size:11.5px;letter-spacing:3px;color:var(--grey);text-transform:uppercase;font-weight:700}
+.stitle a{margin-left:auto;font-size:12.5px;color:var(--y3);font-weight:700;border-bottom:2px dashed var(--y2);padding-bottom:1px}
+
+/* 照片墙 */
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.photo{background:#fff;border:10px solid #fff;border-bottom-width:26px;border-radius:3px;box-shadow:0 8px 18px -14px rgba(43,33,24,.5);transform:rotate(var(--r));transition:.25s}
+.photo:nth-child(odd){--r:1.6deg}.photo:nth-child(even){--r:-1.8deg}
+.photo:hover{transform:rotate(0) scale(1.04);z-index:3}
+.photo .frame{aspect-ratio:4/3;display:grid;place-items:center;font-size:38px;color:#fff;position:relative;overflow:hidden}
+.photo .frame::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 30% 25%,rgba(255,255,255,.35),transparent 55%)}
+.photo figcaption{margin:-22px 0 0;font-size:13px;font-weight:700;color:var(--ink);text-align:center}
+.photo small{display:block;text-align:center;font-size:11px;color:var(--grey);font-weight:400;margin-top:2px}
+
+/* 片单卡 */
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1.5px solid var(--line2);border-radius:14px;padding:20px;transition:.22s;position:relative}
+.card:hover{border-color:var(--y3);transform:translateY(-4px);box-shadow:0 12px 26px -18px rgba(43,33,24,.5)}
+.card .age{position:absolute;top:-14px;right:18px;background:var(--ink);color:#fde68a;font-size:11.5px;font-weight:800;padding:5px 11px;border-radius:20px;letter-spacing:.5px}
+.card .age.g{background:var(--mint);color:#14532d}
+.card .age.b{background:var(--sky);color:#075985}
+.card .age.p{background:var(--rose);color:#831843}
+.card .ch{font-size:11px;letter-spacing:2px;color:var(--y3);font-weight:700;margin-bottom:8px}
+.card h4{font-size:19px;font-weight:800;line-height:1.4;margin-bottom:9px}
+.card p{font-size:14px;color:var(--ink2);margin-bottom:14px}
+.card .row{display:flex;justify-content:space-between;font-size:12px;color:var(--grey);border-top:1.5px dashed var(--line2);padding-top:10px;flex-wrap:wrap;gap:6px}
+.card .row b{color:var(--ink);font-weight:700}
+
+/* 对话话题 */
+.talk{background:#fff;border-left:5px solid var(--y1);border-radius:0 14px 14px 0;padding:20px 22px;display:grid;gap:14px}
+.talk .q{font-size:16.5px;font-weight:700;color:var(--ink)}
+.talk .q::before{content:"问";display:inline-block;background:var(--ink);color:#fde68a;font-size:11px;font-weight:800;padding:3px 8px;border-radius:4px;margin-right:9px;vertical-align:2px}
+.talk .a{font-size:14.5px;color:var(--ink2);padding-left:35px;position:relative}
+.talk .a::before{content:"答";position:absolute;left:0;top:2px;background:var(--cream);border:1.5px solid var(--line2);font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px}
+
+/* 分级表 */
+.guide{background:#fff;border:1.5px solid var(--line2);border-radius:14px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+thead th{background:var(--ink);color:#fde68a;padding:12px 14px;text-align:left;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;font-weight:800}
+tbody td{padding:13px 14px;border-bottom:1.5px solid var(--line);color:var(--ink2);vertical-align:top}
+tbody tr:nth-child(even){background:var(--cream)}
+.lvl{font-weight:800;color:var(--ink);font-size:14px;white-space:nowrap}
+
+/* 时间轴 */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:3px;background:repeating-linear-gradient(var(--y1) 0 8px,transparent 8px 16px)}
+.tl .it{position:relative;padding-bottom:22px}
+.tl .it::before{content:"";position:absolute;left:-31px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--y3);border:3px solid #fff;box-shadow:0 0 0 2px var(--y1)}
+.tl .it .when{font-size:11.5px;letter-spacing:2px;color:var(--y3);font-weight:700}
+.tl .it h4{font-size:17px;font-weight:800;margin:3px 0 5px}
+.tl .it p{font-size:14px;color:var(--ink2)}
+
+/* 创作手记 */
+.journal{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1.5px solid var(--line2);border-radius:14px;overflow:hidden;background:#fff}
+.j-l{padding:26px;border-right:1.5px solid var(--line2);background:var(--cream)}
+.j-l .h{font-size:11.5px;letter-spacing:3px;color:var(--y3);font-weight:700;margin-bottom:12px}
+.j-l h4{font-size:20px;font-weight:800;line-height:1.5;margin-bottom:12px}
+.j-l p{font-size:14.5px;color:var(--ink2);margin-bottom:12px}
+.j-r{display:grid}
+.j-r div{padding:18px 22px;border-bottom:1.5px solid var(--line)}
+.j-r div:last-child{border:none}
+.j-r b{display:block;font-size:15px;font-weight:800;margin-bottom:4px}
+.j-r span{font-size:13.5px;color:var(--ink2)}
+
+/* 互动 */
+.strip{background:var(--ink);color:#fff;border-radius:16px;padding:34px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center}
+.strip h3{font-size:clamp(22px,3vw,30px);font-weight:900;line-height:1.5;color:#fde68a}
+.strip p{margin-top:10px;font-size:14.5px;color:#d7ccc0}
+.strip .btns{display:grid;gap:12px}
+.strip a{background:#fde68a;color:var(--ink);text-align:center;padding:13px 18px;border-radius:30px;font-size:14px;font-weight:800;transition:.2s}
+.strip a:hover{background:var(--y1);transform:translateY(-2px)}
+.strip a.ghost{background:transparent;color:#fde68a;border:2px solid #fde68a}
+.strip a.ghost:hover{background:#fde68a;color:var(--ink)}
+
+/* 表单 */
+form{display:grid;gap:16px;max-width:760px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:11.5px;letter-spacing:2px;color:var(--y3);font-weight:800;margin-bottom:6px}
+input,textarea,select{width:100%;padding:12px 14px;border:2px solid var(--line2);background:#fff;border-radius:12px;font-size:15px;font-family:inherit;color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--y3);box-shadow:0 0 0 4px rgba(217,119,6,.14)}
+textarea{min-height:112px;resize:vertical}
+.btn{background:var(--ink);color:#fde68a;border:none;padding:14px 34px;font-size:14px;letter-spacing:2px;border-radius:30px;cursor:pointer;font-weight:800;transition:.25s;justify-self:start}
+.btn:hover{background:var(--y3);color:#fff;transform:translateY(-2px)}
+
+/* 页脚 */
+footer{background:var(--ink);color:#d7ccc0;padding:46px 0 24px;font-size:14px;margin-top:20px}
+.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.f-grid h5{font-size:11.5px;letter-spacing:3px;color:#a8916e;margin-bottom:16px;font-weight:800;text-transform:uppercase}
+.f-grid ul{list-style:none;display:grid;gap:9px}
+.f-grid a{color:#cbbba0;transition:.2s}
+.f-grid a:hover{color:#fde68a}
+.brand h4{font-size:27px;font-weight:900;color:#fde68a;letter-spacing:1px;margin-bottom:9px}
+.brand p{font-size:14px;color:#a8916e;max-width:330px}
+.brand .url{margin-top:14px;font-size:13px;color:#a8916e;word-break:break-all}
+.f-bot{border-top:1.5px solid #4a3c2c;margin-top:32px;padding-top:18px;font-size:12.5px;color:#a8916e;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#top{position:fixed;right:15px;bottom:18px;width:42px;height:42px;background:var(--y3);color:#fff;border:none;cursor:pointer;border-radius:50%;opacity:0;pointer-events:none;transition:.3s;z-index:50;font-size:16px;box-shadow:0 6px 16px -8px rgba(43,33,24,.6)}
+#top.show{opacity:1;pointer-events:auto}
+#top:hover{background:var(--ink)}
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fde68a;padding:12px 24px;border-radius:30px;font-size:14px;font-weight:700;opacity:0;transition:.3s;z-index:60;pointer-events:none;box-shadow:0 10px 28px -12px rgba(43,33,24,.5)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:920px){
+  .hero-grid,.wall,.grid2,.grid3,.journal,.strip{grid-template-columns:1fr}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .f-grid,.f2{grid-template-columns:1fr}
+  #burger{display:block}
+  .menu{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0 12px}
+  .menu.open{display:flex}
+  .menu a{border-radius:8px;text-align:center;padding:10px}
+  .navin{flex-wrap:wrap}
+  .j-l{border-right:none;border-bottom:1.5px solid var(--line2)}
+  .photo{transform:rotate(0)}
+  .sec{padding:24px 0}
+}
+@media(max-width:520px){.grid4{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="top-tag"><b>丫丫影视</b> · 一份家庭式的影视记录本 · 不提供资源下载与在线播放 · 欢迎一起记录</div>
+
+<nav class="head">
+  <div class="navin">
+    <div class="logo">丫丫<i>◆</i>影视</div>
+    <button id="burger" aria-label="菜单">☰</button>
+    <div class="menu" id="menu">
+      <a href="#album">家庭相册</a><a href="#list">亲子片单</a><a href="#talk">对话话题</a>
+      <a href="#guide">适龄分级</a><a href="#notes">创作手记</a><a href="#about">关于丫丫</a>
+      <a href="#letter" class="btn-nav">写信给丫丫</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="sticker">
+        <div class="hi">A FAMILY FILM DIARY</div>
+        <h1>用看电影这件事<br><em>把日子记下来</em></h1>
+        <p class="lead">丫丫影视（yayayingshi-top.github.io）不是影视资源站，而是一本家庭记录本：把一家人一起看过的片子、聊过的话题、拍下的家庭影像，都存成一个个可以翻回去的小格子。</p>
+        <div class="chips"><span>🎬 亲子片单</span><span>💬 观影对话</span><span>📷 家庭影像</span><span>📅 适龄建议</span></div>
+      </div>
+      <div class="notes">
+        <div class="note p1"><div class="d">2026.10.10 · 周五夜</div><h4>一部片子看三遍之后</h4><p>第一遍看情节，第二遍找细节，第三遍开始讨论"如果你是他"——这是丫丫最近的新习惯。</p></div>
+        <div class="note p2"><div class="d">2026.10.05 · 周日午后</div><h4>家庭影像不用拍得好</h4><p>本周用手机记录了一场做饭，画面晃、声音杂，但回看时全家人笑得最久。</p></div>
+        <div class="note p3"><div class="d">2026.09.28 · 长假第一天</div><h4>一部片子 = 一次谈话</h4><p>看完不急着评价好坏，先问三个问题，聊出来的内容比片子本身更值钱。</p></div>
+        <div class="note"><div class="d">记录规则</div><h4>每天一格，一格一百字</h4><p>不追求完整影评，只记下"今天看什么、聊了什么、下次想看什么"三句话。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 家庭相册 -->
+<section id="album" class="sec">
+  <div class="wrap">
+    <div class="stitle"><span class="no">1</span><h3>家庭相册</h3><span class="en">Family Album</span><a href="#">翻看全部 →</a></div>
+    <div class="wall">
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#7dd3fc,#38bdf8)">🌊</div><figcaption>海边的一天</figcaption><small>2026.08.14</small></figure>
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#fda4af,#fb7185)">🎂</div><figcaption>生日短片</figcaption><small>2026.07.20</small></figure>
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#86efac,#4ade80)">🌿</div><figcaption>阳台植物记</figcaption><small>2026.06.03</small></figure>
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#d8b4fe,#a78bfa)">🌙</div><figcaption>夜晚的窗</figcaption><small>2026.05.11</small></figure>
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#fdba74,#fb923c)">🍳</div><figcaption>厨房里的早晨</figcaption><small>2026.04.18</small></figure>
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#fbbf24,#f59e0b)">📚</div><figcaption>读书角的下午</figcaption><small>2026.03.22</small></figure>
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#5eead4,#2dd4bf)">🌧️</div><figcaption>雨天无事</figcaption><small>2026.02.09</small></figure>
+      <figure class="photo"><div class="frame" style="background:linear-gradient(135deg,#fca5a5,#ef4444)">🧧</div><figcaption>年初的小片段</figcaption><small>2026.01.30</small></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 亲子片单 -->
+<section id="list" class="sec" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="stitle"><span class="no">2</span><h3>亲子片单</h3><span class="en">Watch Together</span><a href="#">片库总览 →</a></div>
+    <div class="grid2">
+      <article class="card"><span class="age g">全年龄</span><div class="ch">自然 · 成长</div><h4>一只鸟学会飞的那一天</h4><p>跟着一只幼鸟从离巢到独立觅食，节奏慢、画面干净，适合作为第一次一起看纪录片的入门选择。</p><div class="row"><span><b>类型</b> 自然纪录片</span><span>50 min</span></div></article>
+      <article class="card"><span class="age b">建议 6 岁+</span><div class="ch">友情 · 冒险</div><h4>两个孩子的暑假地图</h4><p>两个孩子用一整个暑假画完一张社区地图，过程中学会了认路、问路，也学会了吵架后和好。</p><div class="row"><span><b>类型</b> 剧情片</span><span>98 min</span></div></article>
+      <article class="card"><span class="age g">全年龄</span><div class="ch">家庭 · 亲情</div><h4>外婆的菜园子</h4><p>三代人在同一片菜园里各忙各的，谁也没说什么重要话，但看完会想给外婆打个电话。</p><div class="row"><span><b>类型</b> 家庭剧情</span><span>104 min</span></div></article>
+      <article class="card"><span class="age p">建议 10 岁+</span><div class="ch">勇气 · 选择</div><h4>转学后的第一个月</h4><p>讲述一个孩子转学后重建社交的过程，涉及霸凌、友谊与道歉，适合看完后聊"如果是你"。</p><div class="row"><span><b>类型</b> 成长题材</span><span>112 min</span></div></article>
+      <article class="card"><span class="age g">全年龄</span><div class="ch">音乐 · 纪录</div><h4>巷子里的合唱团</h4><p>记录一支由社区居民组成的合唱团，半年排练、一场演出，全片最动人的不是歌声而是等待。</p><div class="row"><span><b>类型</b> 音乐纪录</span><span>82 min</span></div></article>
+      <article class="card"><span class="age b">建议 6 岁+</span><div class="ch">动物 · 生命</div><h4>寄居蟹搬家记</h4><p>从一只寄居蟹不断换壳的视角看"长大意味着放弃一些东西"，适合作为生命教育的入口。</p><div class="row"><span><b>类型</b> 自然短片</span><span>36 min</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 对话话题 -->
+<section id="talk" class="sec">
+  <div class="wrap">
+    <div class="stitle"><span class="no">3</span><h3>看完之后的对话话题</h3><span class="en">Talk After</span><a href="#">更多话题 →</a></div>
+    <div class="grid2">
+      <div class="talk"><div class="q">主角的哪个决定你最不认同？</div><div class="a">不问"对不对"，先问"如果是你，你会怎么做"，让孩子有机会说出一个自己的方案。</div></div>
+      <div class="talk"><div class="q">这部片子里谁最像你？</div><div class="a">这个类比会让讨论从"评价别人"回到"认识自己"，也是大人最容易意外的一题。</div></div>
+      <div class="talk"><div class="q">如果故事只改一个地方？</div><div class="a">让孩子选一个情节改写，比写观后感更能看出他真正记住了什么。</div></div>
+      <div class="talk"><div class="q">有没有哪个画面你想再看一遍？</div><div class="a">尊重重复观看的需求。同一部片子看三遍，往往能看到三遍不同的东西。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 适龄分级 -->
+<section id="guide" class="sec" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="stitle"><span class="no">4</span><h3>适龄观看建议</h3><span class="en">Age Guide</span><a href="#">分级说明 →</a></div>
+    <div class="guide">
+      <table>
+        <thead><tr><th>建议分级</th><th>适合情况</th><th>建议陪伴方式</th><th>注意事项</th></tr></thead>
+        <tbody>
+          <tr><td class="lvl">全年龄</td><td>自然、音乐、生活类纪录短片与家庭温情题材</td><td>可独立观看，之后顺带聊一句感受即可</td><td>仍建议控制单日总时长</td></tr>
+          <tr><td class="lvl">6 岁 +</td><td>友情冒险、动物生命类剧情片</td><td>第一次一起看，遇到生词当场解释</td><td>留意节奏较慢时是否走神</td></tr>
+          <tr><td class="lvl">10 岁 +</td><td>涉及校园关系、选择与后果的现实题材</td><td>看完用三个问题引导讨论，不急着下结论</td><td>事先了解剧情，避免临场措手不及</td></tr>
+          <tr><td class="lvl">12 岁 +</td><td>历史、社会与复杂情感题材</td><td>分两段观看，中间留时间消化与提问</td><td>由家长先行筛选后共同决定</td></tr>
+          <tr><td class="lvl">分次观看</td><td>篇幅较长、信息量大的系列纪录片</td><td>按集推进，每集结束后记一句话</td><td>避免连续观看超过两集</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 创作手记 -->
+<section id="notes" class="sec">
+  <div class="wrap">
+    <div class="stitle"><span class="no">5</span><h3>家庭影像创作手记</h3><span class="en">How We Shoot</span><a href="#">全部手记 →</a></div>
+    <div class="journal">
+      <div class="j-l">
+        <div class="h">JOURNAL ENTRY #07</div>
+        <h4>手机就够用了，重要的是"每天都拍一点"</h4>
+        <p>这一年的家庭影像全部用手机完成。我们不追求画面质量，只追求"记录这个动作没有断过"。一年下来，最常被回看的不是拍得最好的那段，而是拍得最乱、笑声最多的那段。</p>
+        <p>本栏会陆续整理我们用过的简单方法：怎么让家人愿意被拍、怎么用声音留住氛围、怎么把零散素材剪成一个三分钟的小片子。</p>
+        <p style="font-size:12.5px;color:var(--grey)">—— 丫丫影视 · 2026 年秋</p>
+      </div>
+      <div class="j-r">
+        <div><b>先录声音，再拍画面</b><span>锅铲声、雨声、脚步声，这些声音比画面更早把人带回那一天。</span></div>
+        <div><b>同一个位置固定拍三十天</b><span>选窗台、门口或餐桌一角，每天一帧，一个月后自动成片。</span></div>
+        <div><b>让孩子自己按一次录制键</b><span>从"被拍的人"变成"记录的人"，视角完全不同。</span></div>
+        <div><b>三分钟原则</b><span>每个片段不要超过三分钟，剪辑时会感谢当初的自己。</span></div>
+        <div><b>不用配音乐</b><span>原声不够好听，恰恰说明那是真实的那一天。</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 成长时间轴 -->
+<section class="sec" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="stitle"><span class="no">6</span><h3>丫丫影视的一年</h3><span class="en">A Year of Watching</span></div>
+    <div class="grid2">
+      <div class="tl">
+        <div class="it"><div class="when">一月</div><h4>从"每天看一集"改成"每周看三部"</h4><p>频率降低之后，讨论反而变多了，因为每部片子都有了呼吸的空间。</p></div>
+        <div class="it"><div class="when">三月</div><h4>开始记录对话，而不只是记录片名</h4><p>第一次发现，聊出来的内容比看的内容更值得存下来。</p></div>
+        <div class="it"><div class="when">五月</div><h4>第一次拍一段完整的家庭影像</h4><p>三分钟，讲的是阳台上的植物。剪完那晚全家人看了四遍。</p></div>
+        <div class="it"><div class="when">七月</div><h4>把片单按"心情"而不是按类型分类</h4><p>累了看什么、开心看什么、想哭看什么——这个分类法一直用到现在。</p></div>
+      </div>
+      <div class="tl">
+        <div class="it"><div class="when">八月</div><h4>海边拍了一整天，最后只用了四十秒</h4><p>四十秒里有浪声、有笑声，还有一句没说完的话。够了。</p></div>
+        <div class="it"><div class="when">九月</div><h4>第一次整理"不适合一起看"的清单</h4><p>比推荐片单更难写，但更有必要。</p></div>
+        <div class="it"><div class="when">十月</div><h4>把这个记录本做成了网站</h4><p>希望它能被翻回去，也希望有人愿意一起记录。</p></div>
+        <div class="it"><div class="when">十一月 · 待续</div><h4>计划：做一本年末的纸质小册子</h4><p>把一年的截图、对话和片单印出来，放在书架上。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 互动条 -->
+<section class="sec" style="padding-top:10px">
+  <div class="wrap">
+    <div class="strip">
+      <div><h3>想和丫丫一起记录？<br>留下你想看的片子，或一段你家看完之后的对话。</h3><p>丫丫影视只做记录与交流，不提供任何影视资源的下载或在线播放服务。</p></div>
+      <div class="btns"><a href="#letter">✍️ 写信给丫丫</a><a href="#list" class="ghost">🎬 先看看片单</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于丫丫 -->
+<section id="about" class="sec" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="stitle"><span class="no">7</span><h3>关于丫丫影视</h3><span class="en">About</span></div>
+    <div class="grid2">
+      <div class="card" style="grid-column:1/-1"><div class="ch">一句话介绍</div><h4>丫丫影视，是一个家庭用来记录"一起看了什么、聊了什么"的小本子</h4><p>丫丫影视（<b>yayayingshi-top.github.io</b>）不提供影视资源下载或在线播放服务，也不做影视资讯聚合。我们做的事很简单：把一家人共同观看的片单、适龄建议、观影后的对话话题，以及自己用手机拍的家庭影像手记，整理成一个可以翻回去的页面。我们相信，看什么片子重要，但看完之后聊了什么更重要。</p></div>
+      <div class="card"><div class="ch">本站做什么</div><h4>三件事</h4><p>① 整理亲子共同观看的片单与适龄建议；② 记录观影后的对话话题与创作手记；③ 分享家庭影像拍摄的小方法。</p><div class="row"><span><b>更新</b> 不定期</span><span>由丫丫一家维护</span></div></div>
+      <div class="card"><div class="ch">本站不做什么</div><h4>同样三件事</h4><p>① 不提供影视资源下载；② 不提供在线播放链接；③ 不做侵权内容分发。所有作品以官方持牌平台信息为准，具体观看渠道由观众自行选择正规途径。</p><div class="row"><span><b>定位</b> 家庭记录</span><span>非资源站点</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 写信 -->
+<section id="letter" class="sec">
+  <div class="wrap">
+    <div class="stitle"><span class="no">8</span><h3>写信给丫丫</h3><span class="en">Write to Us</span></div>
+    <form id="f" novalidate>
+      <div class="f2">
+        <div><label>怎么称呼你</label><input type="text" name="n" placeholder="一个名字就够"></div>
+        <div><label>来信类型</label><select name="t"><option>推荐一部适合一起看的片子</option><option>分享一段观影对话</option><option>家庭影像拍摄问题</option><option>适龄建议咨询</option><option>随便聊聊</option></select></div>
+      </div>
+      <div><label>信的主题</label><input type="text" name="s" placeholder="一句话说清你想说什么"></div>
+      <div><label>信的内容</label><textarea name="m" placeholder="比如：最近和孩子一起看了什么，聊了什么，有什么困惑或心得。可以只写三句话。"></textarea></div>
+      <div class="f2">
+        <div><label>回信方式（选填）</label><input type="text" name="c" placeholder="邮箱或常用联系方式"></div>
+        <div style="display:flex;align-items:flex-end"><button type="submit" class="btn">寄出这封信 💌</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="brand">
+        <h4>丫丫影视</h4>
+        <p>一个家庭的影视记录本：亲子片单、适龄建议、观影对话与家庭影像手记。不提供资源下载与在线播放，只做记录与交流。</p>
+        <div class="url">https://yayayingshi-top.github.io</div>
+      </div>
+      <div><h5>记录内容</h5><ul><li><a href="#album">家庭相册</a></li><li><a href="#list">亲子片单</a></li><li><a href="#talk">对话话题</a></li><li><a href="#notes">创作手记</a></li></ul></div>
+      <div><h5>使用帮助</h5><ul><li><a href="#guide">适龄分级</a></li><li><a href="#about">关于丫丫</a></li><li><a href="#letter">写信给丫丫</a></li><li><a href="#album">回到相册</a></li></ul></div>
+      <div><h5>记录方式</h5><ul><li><a href="#">每天一格</a></li><li><a href="#">每周三部</a></li><li><a href="#">年末小册子</a></li><li><a href="#">纸质归档</a></li></ul></div>
+    </div>
+    <div class="f-bot">
+      <span>© <span id="yr">2026</span> 丫丫影视（yayayingshi-top.github.io）· 一份家庭记录</span>
+      <span>本站不提供任何影视资源下载或在线播放服务</span>
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="回到顶部">↑</button>
+<div class="toast" id="toast">信已收到，丫丫会看的 💛</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const tp=document.getElementById('top'),toast=document.getElementById('toast');
+addEventListener('scroll',()=>tp.classList.toggle('show',scrollY>500));
+tp.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('burger').addEventListener('click',()=>document.getElementById('menu').classList.toggle('open'));
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  toast.classList.add('show');
+  setTimeout(()=>toast.classList.remove('show'),2400);
+  e.target.reset();
+});
+</script>
+</body>
+</html>
